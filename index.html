@@ -7,127 +7,99 @@
 
 <style>
 body{
-margin:0;
-font-family:Arial, Helvetica, sans-serif;
-background:#0d0d0d;
-color:white;
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:#0f0f0f;
+    color:white;
 }
 
 header{
-background:black;
-padding:20px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:2px solid #c9a227;
+    background:black;
+    padding:20px;
+    text-align:center;
+    font-size:28px;
+    font-weight:bold;
+    letter-spacing:2px;
 }
 
-.logo{
-font-size:26px;
-font-weight:bold;
-color:#c9a227;
+.hero{
+    text-align:center;
+    padding:60px 20px;
+    background:linear-gradient(180deg,#111,#000);
 }
 
-nav a{
-color:white;
-margin:0 15px;
-text-decoration:none;
-font-size:14px;
+.hero h1{
+    font-size:40px;
+    margin-bottom:10px;
 }
 
-.search-bar{
-text-align:center;
-padding:20px;
-}
-
-.search-bar input{
-padding:10px;
-width:300px;
-border-radius:6px;
-border:none;
-}
-
-section{
-padding:40px 20px;
-}
-
-h2{
-color:#c9a227;
-border-bottom:1px solid #333;
-padding-bottom:10px;
+.hero p{
+    color:#aaa;
 }
 
 .productos{
-display:flex;
-flex-wrap:wrap;
-gap:25px;
-margin-top:20px;
+    display:flex;
+    justify-content:center;
+    gap:30px;
+    padding:40px;
+    flex-wrap:wrap;
 }
 
 .card{
-background:#1a1a1a;
-padding:20px;
-border-radius:12px;
-width:280px;
-transition:0.3s;
+    background:#1a1a1a;
+    padding:20px;
+    border-radius:12px;
+    width:250px;
+    text-align:center;
+    transition:0.3s;
 }
 
 .card:hover{
-transform:scale(1.04);
+    transform:scale(1.05);
 }
 
-.card img{
-width:100%;
-border-radius:8px;
-margin-bottom:10px;
+.card h3{
+    margin:10px 0;
 }
 
 .precio{
-color:#c9a227;
-font-weight:bold;
-font-size:18px;
-margin-top:5px;
-}
-
-select{
-margin-top:10px;
-padding:5px;
-width:100%;
+    color:#00ff88;
+    font-size:20px;
+    font-weight:bold;
 }
 
 button{
-margin-top:10px;
-padding:10px;
-background:#c9a227;
-border:none;
-border-radius:6px;
-cursor:pointer;
-font-weight:bold;
+    margin-top:15px;
+    padding:10px 15px;
+    border:none;
+    background:#00ff88;
+    border-radius:6px;
+    cursor:pointer;
+    font-weight:bold;
 }
 
 button:hover{
-background:#a8821e;
+    background:#00cc6a;
 }
 
 .footer{
-background:black;
-text-align:center;
-padding:20px;
-margin-top:40px;
-color:#888;
-font-size:14px;
+    text-align:center;
+    padding:20px;
+    background:black;
+    font-size:14px;
+    color:#888;
 }
 
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-color:white;
-padding:15px;
-border-radius:50%;
-font-size:22px;
-text-decoration:none;
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:white;
+    padding:15px;
+    border-radius:50%;
+    font-size:20px;
+    text-decoration:none;
 }
 </style>
 </head>
@@ -135,111 +107,43 @@ text-decoration:none;
 <body>
 
 <header>
-<div class="logo">ELITE VAPER</div>
-<nav>
-<a href="#kits">Kits</a>
-<a href="#sales">Sales</a>
-<a href="#pods">Pods</a>
-</nav>
+ELITE VAPER
 </header>
 
-<div class="search-bar">
-<input type="text" placeholder="Buscar producto...">
-</div>
-
-<section id="kits">
-<h2>Kits</h2>
-<div class="productos">
-
-<div class="card">
-<img src="https://via.placeholder.com/300x200" alt="Kit Zomo">
-<h3>Kit Pod Zomo + Salt Zomo de regalo 50mg</h3>
-<p class="precio">$45.000</p>
-<button>Comprar</button>
-</div>
-
-<div class="card">
-<img src="https://via.placeholder.com/300x200" alt="Kit Especial">
-<h3>Kit Pod Zomo + Sales Especiales</h3>
-<p class="precio">$100.000</p>
-<button>Comprar</button>
-</div>
-
-</div>
+<section class="hero">
+<h1>Vapers Premium en Buenos Aires</h1>
+<p>Mayorista y minorista | +18</p>
 </section>
 
-<section id="sales">
-<h2>Sales</h2>
-<div class="productos">
+<section class="productos">
 
 <div class="card">
-<img src="https://via.placeholder.com/300x200" alt="La Loca Laura">
-<h3>Sales Especiales "La Loca Laura" 15ml</h3>
-<p class="precio">$80.000</p>
+<h3>Modelo X 6000 Puffs</h3>
+<p class="precio">$25.000</p>
 <button>Comprar</button>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/300x200" alt="Ignite">
-<h3>Ignite Subzero Salt 30ml</h3>
-
-<select>
-<option>Elegir sabor</option>
-<option>Arctic Grape</option>
-<option>Berry Kiwi Blast</option>
-<option>Berry Lemonade Chill</option>
-<option>Green Apple Blizzard</option>
-</select>
-
-<p class="precio">$26.000</p>
+<h3>Modelo Pro 9000 Puffs</h3>
+<p class="precio">$32.000</p>
 <button>Comprar</button>
 </div>
 
 <div class="card">
-<img src="https://via.placeholder.com/300x200" alt="Resistencia">
-<h3>Resistencia Pod Zomo Play</h3>
-<p class="precio">$20.000</p>
-<button>Comprar</button>
-</div>
-
-</div>
-</section>
-
-<section id="pods">
-<h2>Pods Recargables y Descartables</h2>
-<div class="productos">
-
-<div class="card">
-<img src="https://via.placeholder.com/300x200" alt="Pod Recargable">
 <h3>Pod Recargable</h3>
-<p class="precio">Consultar</p>
-<button>Consultar</button>
+<p class="precio">$18.000</p>
+<button>Comprar</button>
 </div>
 
-<div class="card">
-<img src="https://via.placeholder.com/300x200" alt="Descartable">
-<h3>Pod Descartable</h3>
-<p class="precio">Consultar</p>
-<button>Consultar</button>
-</div>
-
-</div>
 </section>
 
 <div class="footer">
-© 2026 Elite Vaper | +18 | Instagram: @elitevaper.ba
+© 2026 Elite Vaper - Venta exclusiva para mayores de 18 años
 </div>
 
-<a class="whatsapp" href="https://wa.me/5491164696141" target="_blank">
-💬
-</a>
-
-</body>
-</html>
 <a class="whatsapp" href="https://wa.me/549TU NUMERO" target="_blank">
 W
 </a>
 
 </body>
-
 </html>
