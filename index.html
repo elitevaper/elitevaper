@@ -5,102 +5,52 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Elite Vaper BA</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
 
 <style>
 *{margin:0;padding:0;box-sizing:border-box;font-family:'Poppins',sans-serif;}
 body{background:#0b0b0b;color:white;}
 
-/* +18 OVERLAY */
+/* +18 */
 .age-overlay{
 position:fixed;
-top:0;
-left:0;
-width:100%;
-height:100%;
+top:0;left:0;
+width:100%;height:100%;
 background:rgba(0,0,0,0.95);
-display:flex;
-align-items:center;
-justify-content:center;
+display:flex;align-items:center;justify-content:center;
 z-index:5000;
-flex-direction:column;
-text-align:center;
-padding:20px;
 }
-
 .age-box{
-background:#111;
-padding:40px;
-border-radius:15px;
-border:2px solid gold;
+background:#111;padding:40px;border-radius:15px;
+border:2px solid gold;text-align:center;
 }
-
-.age-box h2{
-color:gold;
-margin-bottom:20px;
-}
-
+.age-box h2{color:gold;margin-bottom:20px;}
 .age-box button{
-margin:10px;
-padding:10px 25px;
-border:none;
-border-radius:20px;
-cursor:pointer;
-font-weight:bold;
+margin:10px;padding:10px 25px;border:none;
+border-radius:20px;font-weight:bold;cursor:pointer;
 }
-
 .btn-yes{background:gold;}
 .btn-no{background:#444;color:white;}
 
 /* HEADER */
 header{
-background:#111;
-padding:15px 40px;
-display:flex;
-justify-content:space-between;
-align-items:center;
-border-bottom:2px solid gold;
-position:sticky;
-top:0;
-z-index:999;
+background:#111;padding:15px 40px;
+display:flex;justify-content:space-between;align-items:center;
+border-bottom:2px solid gold;position:sticky;top:0;z-index:999;
 }
-
-.logo{
-display:flex;
-align-items:center;
-gap:15px;
-}
-
-.logo img{
-width:60px;
-height:60px;
-object-fit:cover;
-border-radius:50%;
-}
-
-/* NUEVA FUENTE SOLO PARA EL NOMBRE */
+.logo{display:flex;align-items:center;gap:15px;}
+.logo img{width:60px;height:60px;border-radius:50%;object-fit:cover;}
 .logo h1{
 font-family:'Playfair Display',serif;
-color:gold;
-font-size:24px;
-letter-spacing:2px;
-white-space:nowrap;
+color:gold;font-size:24px;letter-spacing:2px;
 }
 
-nav a{
-color:white;
-margin:0 10px;
-text-decoration:none;
-}
-
+nav a{color:white;margin:0 10px;text-decoration:none;}
 nav a:hover{color:gold;}
 
 .banner{
-background:#000;
-color:gold;
-text-align:center;
-padding:10px;
-font-weight:600;
+background:#000;color:gold;text-align:center;
+padding:10px;font-weight:600;
 }
 
 .section{padding:60px 8%;}
@@ -113,21 +63,14 @@ gap:30px;
 }
 
 .card{
-background:#1a1a1a;
-padding:20px;
-border-radius:15px;
-transition:0.3s;
-text-align:center;
+background:#1a1a1a;padding:20px;
+border-radius:15px;transition:0.3s;text-align:center;
 }
-
-.card:hover{
-transform:translateY(-8px);
-box-shadow:0 0 20px gold;
-}
+.card:hover{transform:translateY(-8px);box-shadow:0 0 20px gold;}
 
 .card img{
 width:100%;
-height:260px;
+height:250px;
 object-fit:contain;
 background:#111;
 border-radius:12px;
@@ -135,103 +78,55 @@ padding:8px;
 margin-bottom:15px;
 }
 
-.card h3{
-font-size:16px;
-min-height:45px;
-}
-
-.price{
-color:gold;
-font-weight:bold;
-margin:10px 0;
-}
+.price{color:gold;font-weight:bold;margin:10px 0;}
 
 button{
-background:gold;
-border:none;
-padding:10px;
-border-radius:20px;
-cursor:pointer;
-font-weight:bold;
-width:100%;
+background:gold;border:none;padding:10px;
+border-radius:20px;cursor:pointer;font-weight:bold;width:100%;
 }
-
 button:hover{background:#d4af37;}
 
 .cart-icon{
-position:fixed;
-top:90px;
-right:20px;
-background:gold;
-color:black;
-padding:12px 18px;
-border-radius:30px;
-cursor:pointer;
-font-weight:bold;
+position:fixed;top:90px;right:20px;
+background:gold;color:black;padding:12px 18px;
+border-radius:30px;cursor:pointer;font-weight:bold;
 z-index:2000;
 }
 
 .cart-panel{
-position:fixed;
-top:0;
-right:-380px;
-width:350px;
-height:100%;
-background:#111;
-padding:20px;
-transition:0.4s;
-overflow:auto;
-z-index:1500;
+position:fixed;top:0;right:-380px;
+width:350px;height:100%;
+background:#111;padding:20px;
+transition:0.4s;overflow:auto;z-index:1500;
 }
-
 .cart-panel.active{right:0;}
-.cart-panel h3{color:gold;margin-bottom:20px;}
 
 .login-box{
-background:#1a1a1a;
-padding:15px;
-border-radius:10px;
-margin-bottom:20px;
+background:#1a1a1a;padding:15px;border-radius:10px;margin-bottom:20px;
 }
 
 input,select{
-width:100%;
-padding:8px;
-margin:6px 0;
-border-radius:8px;
-border:none;
+width:100%;padding:8px;margin:6px 0;
+border-radius:8px;border:none;
 }
 
 .whatsapp{
-position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-width:60px;
-height:60px;
-border-radius:50%;
-display:flex;
-align-items:center;
-justify-content:center;
-font-size:28px;
-color:white;
-text-decoration:none;
+position:fixed;bottom:20px;right:20px;
+background:#25D366;width:60px;height:60px;
+border-radius:50%;display:flex;
+align-items:center;justify-content:center;
+font-size:28px;color:white;text-decoration:none;
 }
 
 footer{
-background:#111;
-text-align:center;
-padding:25px;
-border-top:2px solid gold;
-margin-top:50px;
-font-size:14px;
-color:#ccc;
+background:#111;text-align:center;
+padding:25px;border-top:2px solid gold;
+margin-top:50px;font-size:14px;color:#ccc;
 }
 </style>
 </head>
 <body>
 
-<!-- +18 -->
 <div class="age-overlay" id="ageCheck">
 <div class="age-box">
 <h2>¿Sos mayor de 18 años?</h2>
@@ -245,7 +140,6 @@ color:#ccc;
 <img src="https://raw.githubusercontent.com/elitevaper/elitevaper/98ebe8d84c7be3d78ab031350f2caedc8d4ed200/b46dcf7b-9b6a-4e0e-925c-fc4ea4c4a152.png">
 <h1>ELITE VAPER BA</h1>
 </div>
-
 <nav>
 <a href="#kits">Kits</a>
 <a href="#sales">Sales</a>
@@ -281,6 +175,63 @@ color:#ccc;
 <button onclick="finalizarCompra()">Finalizar Pedido</button>
 </div>
 
+<!-- KITS -->
+<section class="section" id="kits">
+<h2>KITS</h2>
+<div class="products">
+
+<div class="card">
+<img src="https://raw.githubusercontent.com/elitevaper/elitevaper/cc57eb0c62e190765d1eb0274593d197dc152fce/ChatGPT%20Image%203%20mar%202026,%2002_20_43%20a.m..png">
+<h3>Kit Pod Zomo + Salt Zomo 50mg</h3>
+<p class="price">$45.000</p>
+<button onclick="addToCart('Kit Pod Zomo + Salt Zomo',45000)">Agregar</button>
+</div>
+
+<div class="card">
+<img src="https://raw.githubusercontent.com/elitevaper/elitevaper/cc57eb0c62e190765d1eb0274593d197dc152fce/Gemini_Generated_Image_qqfiu4qqfiu4qqfi.png">
+<h3>Kit Pod Zomo + Sales Especiales</h3>
+<p class="price">$100.000</p>
+<button onclick="addToCart('Kit Pod Zomo + Sales Especiales',100000)">Agregar</button>
+</div>
+
+</div>
+</section>
+
+<!-- SALES -->
+<section class="section" id="sales">
+<h2>SALES</h2>
+<div class="products">
+
+<div class="card">
+<img src="https://raw.githubusercontent.com/elitevaper/elitevaper/cc57eb0c62e190765d1eb0274593d197dc152fce/ChatGPT%20Image%203%20mar%202026,%2002_09_08%20a.m..png">
+<h3>Sales Especiales "La Loca Laura" 15ml</h3>
+<p class="price">$80.000</p>
+<button onclick="addToCart('Sales La Loca Laura',80000)">Agregar</button>
+</div>
+
+<div class="card">
+<img src="https://raw.githubusercontent.com/elitevaper/elitevaper/cc57eb0c62e190765d1eb0274593d197dc152fce/Gemini_Generated_Image_o8qum6o8qum6o8qu.png">
+<h3>Ignite Subzero Salt 30ml</h3>
+<p class="price">$26.000</p>
+<button onclick="addToCart('Ignite Subzero Salt',26000)">Agregar</button>
+</div>
+
+</div>
+</section>
+
+<!-- RESISTENCIAS -->
+<section class="section" id="resistencias">
+<h2>RESISTENCIAS</h2>
+<div class="products">
+<div class="card">
+<img src="https://raw.githubusercontent.com/elitevaper/elitevaper/cc57eb0c62e190765d1eb0274593d197dc152fce/ChatGPT%20Image%203%20mar%202026,%2002_12_38%20a.m..png">
+<h3>Resistencia Pod Zomo Play x2</h3>
+<p class="price">$20.000</p>
+<button onclick="addToCart('Resistencia Pod Zomo Play x2',20000)">Agregar</button>
+</div>
+</div>
+</section>
+
 <footer>
 © 2026 Elite Vaper BA - Venta exclusiva para mayores de 18 años
 </footer>
@@ -288,12 +239,39 @@ color:#ccc;
 <a href="https://wa.me/541164696141" class="whatsapp" target="_blank">💬</a>
 
 <script>
-function enterSite(){
-document.getElementById("ageCheck").style.display="none";
+let cart=[];let total=0;
+
+function enterSite(){document.getElementById("ageCheck").style.display="none";}
+function leaveSite(){window.location.href="https://www.google.com";}
+
+function addToCart(name,price){
+cart.push({name,price});
+total+=price;
+updateCart();
 }
 
-function leaveSite(){
-window.location.href="https://www.google.com";
+function updateCart(){
+document.getElementById("cart-count").innerText=cart.length;
+let html="";
+cart.forEach(item=>{html+=`<p>${item.name} - $${item.price}</p>`;});
+document.getElementById("cart-items").innerHTML=html;
+document.getElementById("total").innerText=total;
+}
+
+function toggleCart(){
+document.getElementById("cartPanel").classList.toggle("active");
+}
+
+function finalizarCompra(){
+let name=document.getElementById("userName").value;
+let email=document.getElementById("userEmail").value;
+if(!name||!email){alert("Debes crear una cuenta para comprar");return;}
+let first=localStorage.getItem(email);
+if(!first){
+alert("¡Tenés envío gratis por ser tu primera compra!");
+localStorage.setItem(email,"comprado");
+}
+alert("Pedido registrado correctamente. Te contactaremos por WhatsApp.");
 }
 </script>
 
